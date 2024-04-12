@@ -4,10 +4,10 @@ accordionItems.forEach(item => {
     item.addEventListener('click', () => {
         item.classList.toggle('active');
         const content = item.querySelector('.accordion-content');
-        if (content.styles.display === 'none' || content.styles.display === '') {
-            content.styles.display = 'block';
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
         } else {
-            content.styles.display = 'none';
+            content.style.display = 'none';
         }
     });
 
@@ -20,3 +20,4 @@ accordionItems.forEach(item => {
         item.classList.remove('focused');
     });
 });
+
