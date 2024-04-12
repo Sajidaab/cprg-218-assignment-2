@@ -1,5 +1,7 @@
 /* Reset styles */
 body {
+    color: #333; /* Dark text color */
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -90,11 +92,18 @@ p {
     padding: 20px;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
 }
 
 .card img {
     width: 100%;
     border-radius: 5px;
+}
+
+/* Apply focus style when card is focused */
+.card:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px #007bff; /* Add custom focus style */
 }
 
 /* Video section */

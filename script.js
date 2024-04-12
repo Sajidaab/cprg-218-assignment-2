@@ -10,4 +10,14 @@ accordionItems.forEach(item => {
             content.style.display = 'block';
         }
     });
+
+    // Add focus and blur event listeners to apply focus styles
+    item.addEventListener('focus', () => {
+        item.classList.add('focused');
+    });
+
+    item.addEventListener('blur', () => {
+        item.classList.remove('focused');
+    });
 });
+
